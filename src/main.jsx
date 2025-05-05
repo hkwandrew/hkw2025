@@ -8,28 +8,6 @@ import Work from './pages/Work.jsx'
 
 import './index.scss'
 
-const router = createBrowserRouter([
-  {
-    basename: 'hkw2025',
-    path: '/',
-    element: <App />,
-    children: [
-      {
-        index: true,
-        element: <About />
-      },
-      {
-        path: '/services',
-        element: <Services />
-      },
-      {
-        path: '/work',
-        element: <Work />
-      }
-    ]
-  }
-])
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router basename='/hkw2025/'>

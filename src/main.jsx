@@ -10,6 +10,7 @@ import './index.scss'
 
 const router = createBrowserRouter([
   {
+    basename: '/hkw2025/',
     path: '/',
     element: <App />,
     children: [

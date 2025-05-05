@@ -5,7 +5,7 @@ module.exports = {
             unitToConvert: 'px',
             viewportWidth: 1440,
             unitPrecision: 5,
-            propList: ['width', 'height', 'top', 'right', 'bottom', 'left', 'margin', 'padding'],
+            propList: ['width', 'height', 'top', 'right', 'bottom', 'left', 'margin', 'padding', 'gap', 'border-radius', 'font-size', 'line-height'],
             viewportUnit: 'vw',
             fontViewportUnit: 'vw',
             selectorBlackList: [],

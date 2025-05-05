@@ -1,0 +1,56 @@
+@use 'typography';
+
+.services {
+    padding: 65px;
+
+    .services-heading {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.44444;
+        color: #ade3e5;
+        text-transform: uppercase;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        margin-block-start: 45px;
+    }
+
+    li {
+        @include typography.display;
+        font-weight: 500;
+        line-height: 1.28;
+        text-box-trim: trim-both;
+        text-box-edge: cap alphabetic;
+        color: #ade3e5;
+
+        &.dimmed {
+            color: rgba(191, 234, 247, 0.10);
+
+
+        }
+    }
+}
+
+#services-coffee-cup {
+    z-index: 10;
+}
+
+.services {
+    position: relative;
+
+    .service-description {
+        z-index: 1000;
+        position: fixed;
+        pointer-events: none;
+        overflow: hidden;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.23768;
+        letter-spacing: '-0.4px';
+        text-box-trim: 'trim-both';
+        text-box-edge: 'cap alphabetic';
+    }
+}

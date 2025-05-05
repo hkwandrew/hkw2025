@@ -1,0 +1,56 @@
+.hkw {
+    display: flex;
+    gap: 83.87px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+
+    svg {
+        opacity: 1;
+        transition: opacity 450ms ease-out;
+    }
+
+    &:hover svg {
+        opacity: 0.3;
+        transition: opacity 150ms ease-in;
+    }
+
+    svg:hover {
+        opacity: 1;
+        transition: opacity 150ms ease-in;
+    }
+}
+
+.letter {
+    letter-spacing: -0.44px;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.blue .hkw {
+    opacity: 0.3;
+}
+
+.hover-letter-container {
+    position: relative;
+    width: 383px;
+    height: 458px;
+
+    &.letter-w {
+        translate: -103.87px 0;
+    }
+
+    svg {
+        transition: opacity 450ms ease-out;
+        position: absolute;
+    }
+
+    &:hover svg {
+        opacity: 1;
+        transition: opacity 150ms ease-in;
+    }
+}

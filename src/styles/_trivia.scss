@@ -1,0 +1,45 @@
+[class*="trivia-"] {
+    position: relative;
+    overflow: visible;
+    transition: all 0.45s ease-in-out;
+
+    .text {
+        font-size: 1.75rem;
+        font-weight: 500;
+        line-height: 1.28571;
+        letter-spacing: -1.12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+    }
+}
+
+.trivia-0 {
+    height: 518.983px;
+    width: 517.055px;
+    left: -130px;
+    top: -5px;
+    clip-path: polygon(34% 12%, 100% 50%, 60% 90%, 22% 67%);
+
+    .text {
+        left: 177.97px;
+        top: 245px;
+        width: 238px;
+    }
+}
+
+.trivia-1 {
+    height: 340.143px;
+    width: 338.888px;
+    left: 225px;
+    top: 244.85px;
+    clip-path: polygon(100% 13%, 79% 54%, 84% 100%, 0 87%, 13% 0);
+
+    .text {
+        top: 120px;
+        left: 30px;
+        width: 228px;
+    }
+}

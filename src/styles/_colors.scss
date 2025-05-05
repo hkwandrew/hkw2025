@@ -1,0 +1,55 @@
+/// COLORS
+
+// HKW Red
+$hkw-red-100: #3A0B12;
+$hkw-red-200: #5A121B;
+$hkw-red-300: #982426;
+$hkw-red-400: #BE3638;
+$hkw-red-500: #EEC7C8;
+
+//HKW Blue
+$hkw-blue-100: #020B33;
+$hkw-blue-200: #013565;
+$hkw-blue-300: #0460A1;
+$hkw-blue-400: #B8E6FF;
+$hkw-blue-500: #E6F6FF;
+$hkw-blue-600: #050f44;
+
+// HKW Yellow
+$hkw-yellow-100: #544607;
+$hkw-yellow-200: #79810A;
+$hkw-yellow-300: #E8F51C;
+$hkw-yellow-400: #F6FBA4;
+
+// HKW Orange
+$hkw-orange-100: #542207;
+$hkw-orange-200: #AA3C05;
+$hkw-orange-300: #D25411;
+$hkw-orange-400: #F4D6C6;
+
+// HKW Neutral
+$hkw-neutral-black: #000;
+$hkw-neutral-white: #f5f5f5;
+
+// HKW Green
+$hkw-green-500: #032826;
+$hkw-green-400: #0D3C39;
+$hkw-green-300: #049EA1;
+$hkw-green-200: #B8FBFF;
+$hkw-green-100: #E6FFFE;
+
+.text-blue-100 {
+    color: $hkw-blue-100;
+}
+
+.text-blue-200 {
+    color: $hkw-blue-200;
+}
+
+.text-blue-400 {
+    color: $hkw-blue-400;
+}
+
+.text-white {
+    color: $hkw-neutral-white;
+}

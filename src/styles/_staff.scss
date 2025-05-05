@@ -1,0 +1,582 @@
+@use "colors";
+@use "typography";
+
+.staff {
+    position: absolute;
+
+    .image {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        transition: all 0.45s ease-in-out;
+        will-change: clip-path;
+
+        &:hover {
+            transition: clip-path 0.15s ease-in-out;
+        }
+
+        .overlay {
+            .bio {
+                font-size: typography.$text-body-small;
+                position: relative;
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    .caption {
+        position: absolute;
+        transition: opacity 0.45s ease-in-out;
+
+        .clip-path {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+
+            p.staff-name {
+                font-weight: 500;
+                line-height: 1.08333;
+                letter-spacing: -0.96px;
+                font-size: typography.$text-button-large;
+            }
+
+            p.role {
+                font-weight: 300;
+                line-height: 1.44444;
+                font-size: typography.$text-body-medium;
+                letter-spacing: -0.72px;
+            }
+        }
+    }
+}
+
+.scott-mueller {
+    width: 486.68px;
+    height: 483.218px;
+    left: 95.11px;
+
+    .image-wrapper {
+        height: 353.7264px;
+        width: 403.8608px;
+    }
+
+    .image {
+        left: 78px;
+        bottom: 57px;
+        transform: rotate(-103.03deg);
+        clip-path: polygon(100% 2%, 86% 52%, 98% 100%, 0 100%, 0 0);
+        height: 353.727px;
+        width: 403.86px;
+
+        &:hover {
+            transform: rotate(-90deg);
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+        }
+
+        .overlay {
+            transform: rotate(90deg);
+            background-color: unset !important;
+            height: 403.86px;
+
+            .bio {
+                background-color: colors.$hkw-orange-300;
+                right: 0;
+                height: fit-content;
+                width: 353.727px;
+            }
+        }
+    }
+
+    .caption {
+        position: absolute;
+        left: 0;
+        bottom: 48.14px;
+
+        .clip-path {
+            clip-path: polygon(21% 12%, 87% 28%, 79% 84%, 8% 69%);
+        }
+
+        .info {
+            left: 61.02px;
+            top: 92.63px;
+        }
+    }
+}
+
+.geneva-kaiser {
+    width: 600.281px;
+    height: 609.217px;
+    right: 85px;
+
+    .image-wrapper {
+        transform: rotate(22.547deg);
+        height: 470.97px;
+        width: 454.426px;
+        bottom: 70px;
+        left: 70px;
+        position: absolute;
+    }
+
+    .image {
+        width: 388px;
+        height: 518px;
+        bottom: 0;
+        clip-path: polygon(10% 15%, 100% 18%, 110% 100%, 0 93%);
+        transform: rotate(-17.547deg);
+
+        &:hover {
+            transform: rotate(-22.547deg);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .overlay {
+            margin-block: auto;
+        }
+    }
+
+    .caption {
+        clip-path: polygon(33% 0, 63% 28%, 99% 35%, 67% 100%, 0 68%);
+        bottom: 26.77px;
+        right: 70.84px;
+    }
+}
+
+.gabi-castillo {
+    position: relative;
+    width: 557.41px;
+    height: 491.648px;
+    left: 121px;
+    top: 80px;
+
+    .image-wrapper {
+        width: 567px;
+        height: 598px;
+    }
+
+    .image {
+        width: 549.648px;
+        height: 491.523px;
+        transform: rotate(6deg);
+        clip-path: polygon(0 25%, 95% 0, 97% 80%, 40% 100%);
+        background-position: top -20px right;
+
+        &:hover {
+            transform: rotate(0deg);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+
+            .bio {
+                text-wrap: balance;
+                padding-inline: 80px;
+            }
+        }
+    }
+
+    .caption {
+        clip-path: polygon(22% 12%, 89% 26%, 78% 87%, 10% 74%);
+        left: 18.73px;
+        bottom: -90.43px;
+
+        .info {
+            width: 148.019px;
+        }
+    }
+}
+
+.clare-kocheri {
+    position: relative;
+    width: 510.759px;
+    height: 527.689px;
+    top: 265.81px;
+    left: 85px;
+
+    .image-wrapper {
+        height: 470px;
+        width: 470px;
+    }
+
+    .image {
+        width: 394.45px;
+        height: 450.355px;
+        transform: rotate(-13.031deg);
+        background-size: 120%;
+        clip-path: polygon(50% 15%, 100% 4%, 98% 100%, 0 100%, 2% 0);
+        transition: clip-path 0.45s ease-in-out, background-size 0.45s ease-in-out, transform 0.45s ease-in-out;
+
+        &:hover {
+            background-size: 100%;
+            transform: rotate(0deg);
+            transition: clip-path 0.15s ease-in-out, background-size 0.15s ease-in-out, transform 0.15s ease-in-out;
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .caption {
+        bottom: -30px;
+        left: -70px;
+        clip-path: polygon(22% 12%, 87% 28%, 80% 84%, 8% 68%);
+
+        .info {
+            top: 92.65px;
+            left: 61.02px;
+        }
+    }
+}
+
+.travis-irwin {
+    position: relative;
+    width: 476.85px;
+    height: 485px;
+    top: 244px;
+    left: 168px;
+
+    .image {
+        width: 377px;
+        height: 429px;
+        transform: rotate(10deg);
+
+        &:hover {
+            transform: rotate(0deg) scale(1.1);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            transition: all 0.15s ease-in-out;
+        }
+    }
+
+    .caption {
+        right: 42.55px;
+        bottom: 63.68px;
+        transform: rotate(3.528deg);
+
+
+        .clip-path {
+            clip-path: polygon(35% 0, 95% 13%, 100% 100%, 0 77%);
+        }
+
+        .info {
+            transform: rotate(-3.528deg);
+            top: 65px;
+            left: 111px;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.stephen-okonkwo {
+    position: relative;
+    width: 552.004px;
+    height: 552.408px;
+    bottom: -550px;
+    left: 80px;
+
+    .image {
+        width: 496.368px;
+        height: 458.385px;
+        clip-path: polygon(26% 15%, 83% 20%, 100% 100%, 0% 100%);
+        transform: rotate(13deg);
+
+        &:hover {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            transform: rotate(0deg);
+        }
+    }
+
+    .caption {
+        bottom: -10px;
+        height: 226.004px;
+        right: 90px;
+        width: 205.400px;
+        transform: rotate(65.903deg);
+
+        .clip-path {
+            height: 100%;
+            clip-path: polygon(100% 0, 80% 50%, 100% 100%, 0 100%, 0 0);
+        }
+
+        .info {
+            transform: rotate(-65.903deg);
+            top: 90px;
+            left: 0;
+        }
+    }
+}
+
+.adam-townsend {
+    width: 523.793px;
+    height: 453.067px;
+    left: 207px;
+    top: 299px;
+    position: relative;
+
+    .image {
+        transform: rotate(-5.131deg);
+        width: 353.727px;
+        height: 423.02px;
+        clip-path: polygon(50% 14%, 100% 3%, 98% 97%, 0 97%, 2% 0);
+        top: 10px;
+
+        &:hover {
+            transform: rotate(0deg);
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+        }
+    }
+
+    .caption {
+        bottom: 0px;
+        right: 0px;
+        width: 254.793px;
+        height: 212.067px;
+
+        .clip-path {
+            width: 225.868px;
+            height: 171.631px;
+            transform: rotate(-11.149deg);
+            clip-path: polygon(15% 0, 100% 26%, 93% 100%, 0 74%);
+        }
+
+        .info {
+            transform: rotate(11.149deg);
+            left: 35px;
+        }
+    }
+}
+
+.jennifer-chang {
+    position: relative;
+    width: 561.786px;
+    height: 590.238px;
+    top: 810px;
+
+    .image {
+        height: 426px;
+        width: 372px;
+        transform: rotate(-6.379deg);
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.15s ease-in-out;
+        }
+    }
+
+    .caption {
+        width: 286.278px;
+        height: 192.068px;
+        bottom: 175px;
+        right: 120px;
+        background-color: colors.$hkw-orange-300;
+        clip-path: polygon(32% 0, 94% 11%, 100% 100%, 0 74%);
+
+        .info {
+            width: 148px;
+            right: 50px;
+            top: 60px;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.matt-grantski {
+    position: relative;
+    width: 510.759px;
+    height: 527.698px;
+    top: 1180.81px;
+    left: -455px;
+
+    .image {
+        clip-path: polygon(52% 16%, 100% 3%, 98% 100%, 0 100%, 3% 0);
+        background-position: top center !important;
+        background-size: 117% !important;
+        height: 450.355px;
+        width: 394.45px;
+        transform: rotate(-13.031deg);
+
+        &:hover {
+            transform: rotate(0deg) scale(1.1);
+            transition: all 0.15s ease-in-out;
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+        }
+    }
+
+    .caption {
+        transform: rotate(24.419deg);
+        top: 265px;
+        left: -60px;
+        width: 262.509px;
+        height: 244.557px;
+
+        .clip-path {
+            clip-path: polygon(0 17%, 85% 0, 100% 80%, 10% 100%);
+            height: 173.442px !important;
+            width: 209.552px !important;
+        }
+
+        .info {
+            transform: rotate(-24.419deg);
+            top: 60px;
+            left: 30px;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.harriet-cacdac {
+    width: 552.004px;
+    height: 552.408px;
+    top: 1370px;
+    left: 745px;
+    position: relative;
+
+    .image {
+        width: 496.368px;
+        height: 458.385px;
+        clip-path: polygon(36% 3%, 93% 15%, 100% 100%, 0% 80%);
+
+        &:hover {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    .caption {
+        bottom: 10px;
+        right: -15px;
+        height: 290.004px;
+        width: 279.400px;
+
+        .clip-path {
+            width: 205px !important;
+            height: 226px !important;
+            transform: rotate(65.903deg);
+            clip-path: polygon(100% 0, 80% 50%, 100% 100%, 0 100%, 0 0);
+        }
+
+        .info {
+            transform: rotate(-65.903deg);
+            top: 100px;
+            left: 20px;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.andrew-hughes {
+    width: 600.281px;
+    height: 609.217px;
+    position: relative;
+    top: 1750px;
+    right: 460px;
+
+    .image {
+        width: 385.426px;
+        height: 407.97px;
+
+        transform: rotate(11.547deg);
+        clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+
+        &:hover {
+            transform: rotate(0deg) scale(1.1);
+            transition: all 0.15s ease-in-out;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    .caption {
+        bottom: 110px;
+        right: 165px;
+        width: 227.602px;
+        height: 242.37px;
+
+        .clip-path {
+            transform: rotate(90deg);
+            clip-path: polygon(5% 15%, 85% 2%, 100% 86%, 18% 100%);
+            width: 227.602px;
+            height: 242.37px;
+        }
+
+        .info {
+            transform: rotate(-90deg);
+            width: 195px;
+            top: 80px;
+            left: 0px;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.erick-doxey {
+    top: 1850px;
+    left: -450px;
+    position: relative;
+    width: 507.75px;
+    height: 527.679px;
+
+    .image {
+        width: 487.865px;
+        height: 496.694px;
+        transform: rotate(-2.341deg);
+        background-color: #C1C6C5;
+        clip-path: polygon(0 0, 100% 14%, 77% 100%, 2% 87%);
+
+        &:hover {
+            transform: rotate(0deg);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    .caption {
+        bottom: 5px;
+        right: 0px;
+
+
+        .clip-path {
+            background-color: colors.$hkw-orange-200;
+            clip-path: polygon(39% 0, 100% 38%, 62% 100%, 36% 69%, 0 59%);
+            height: 250.251px !important;
+            width: 250.251px !important;
+        }
+
+        .info {
+            left: 65px;
+            top: 85px;
+        }
+    }
+
+    .overlay {
+        display: none;
+    }
+}

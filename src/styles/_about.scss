@@ -1,0 +1,103 @@
+@use 'colors';
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    max-width: 528px;
+    margin: 0 0 136px 70px;
+    position: absolute;
+    bottom: 0;
+
+    .about-title {
+        text-transform: uppercase;
+    }
+}
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background-image: url('./cursor.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10;
+    transform-origin: center;
+}
+
+.cta-1-wrapper {
+    width: 497.881px;
+    position: relative;
+    height: 330.191px;
+    top: 725px;
+    left: 54%;
+
+    .cta-1 {
+        background-color: colors.$hkw-orange-300;
+        clip-path: polygon(1% 70%, 35% 3%, 89% 20%, 91% 100%);
+        padding: 96px 69.38px 134.19px 158px;
+
+        .cta-text {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.4;
+            letter-spacing: -1.08px;
+            color: colors.$hkw-neutral-white;
+        }
+    }
+
+    svg {
+        transform: rotate(-27.467deg);
+        position: absolute;
+        right: 0;
+        bottom: 57.31px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.cta-2-wrapper {
+    width: 448.6px;
+    height: 448.6px;
+    position: relative;
+    top: 1650px;
+    left: 850px;
+
+
+
+    .cta-2 {
+        background-color: colors.$hkw-red-300;
+        clip-path: polygon(39% 0, 100% 38%, 61% 100%, 37% 69%, 1% 59%);
+        width: 448.6px;
+        height: 448.6px;
+
+        .cta-text {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.4;
+            letter-spacing: -1.08px;
+            display: flex;
+            justify-content: center;
+            padding-top: 175px;
+            height: 100%;
+            text-align: center;
+            color: colors.$hkw-neutral-white;
+        }
+    }
+
+    svg {
+        position: absolute;
+        top: 145px;
+        left: 25px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.about {
+    height: 100vh;
+}

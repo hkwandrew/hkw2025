@@ -1,0 +1,48 @@
+.marmot-wrapper {
+    width: 100%;
+    max-width: 428px;
+    height: 100%;
+    max-height: 218px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+
+    .marmot-container {
+        position: relative;
+        overflow: visible;
+
+        svg {
+            overflow: visible;
+        }
+
+        #marmot-all path {
+            stroke: none;
+            mix-blend-mode: normal;
+            paint-order: fill;
+        }
+    }
+
+    &:hover {
+        cursor: none;
+    }
+}
+
+#left-ear {
+    transform-origin: 100% 50%;
+}
+
+#services-marmot,
+#services-coffee-cup,
+#computer,
+#left-hand,
+#work-marmot,
+#waving-arm {
+    overflow: visible;
+    translate: 0 -30px;
+    position: absolute;
+}
+
+#services-coffee-cup {
+    z-index: 10;
+}

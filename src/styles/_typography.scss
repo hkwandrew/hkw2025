@@ -1,0 +1,134 @@
+$text-display: 5rem; // 80px
+$text-h1: 4.5rem; // 72px
+$text-h2: 4rem; // 64px
+$text-h3: 3rem; // 48px
+$text-h4: 2rem; // 32px
+$text-h5: 1.5rem; // 24px
+
+$text-body-large: 1.375rem; // 22px
+$text-body-medium: 1.125rem; // 18px
+$text-body-small: 1rem; // 16px
+
+$text-button-large: 1.5rem; // 24px
+$text-button-medium: 1.125rem; // 18px
+$text-button-small: 1rem; // 16px
+
+@mixin heading-text-styles {
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+@mixin body-text-styles {
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+@mixin button-text-styles {
+    font-weight: 500;
+    font-stretch: condensed;
+    text-transform: uppercase;
+
+}
+
+@mixin display {
+    font-size: $text-display;
+    letter-spacing: -1.6px;
+    @include heading-text-styles;
+}
+
+@mixin h1 {
+    font-size: $text-h1;
+    letter-spacing: -1.44px;
+    @include heading-text-styles;
+}
+
+@mixin h2 {
+    font-size: $text-h2;
+    letter-spacing: -1.28px;
+    @include heading-text-styles;
+}
+
+@mixin h3 {
+    font-size: $text-h3;
+    letter-spacing: -0.96px;
+    @include heading-text-styles;
+}
+
+@mixin h4 {
+    font-size: $text-h4;
+    letter-spacing: -0.64px;
+    @include heading-text-styles;
+}
+
+@mixin h5 {
+    font-size: $text-h5;
+    letter-spacing: -0.48px;
+    @include heading-text-styles;
+}
+
+h1,
+.h1 {
+    @include h1;
+}
+
+h2,
+.h2 {
+    @include h2;
+}
+
+h3,
+.h3 {
+    @include h3;
+}
+
+h4,
+.h4 {
+    @include h4;
+}
+
+h5,
+.h5 {
+    @include h5;
+}
+
+.body-large {
+    font-size: $text-body-large;
+    letter-spacing: -0.44px;
+    @include body-text-styles;
+}
+
+.body-medium {
+    font-size: $text-body-medium;
+    letter-spacing: -0.36px;
+    @include body-text-styles;
+}
+
+.body-small {
+    font-size: $text-body-small;
+    @include body-text-styles;
+}
+
+button,
+.button,
+input[type="submit"],
+a {
+    @include button-text-styles;
+}
+
+.button-large {
+    font-size: $text-button-large;
+    line-height: 1.08333;
+}
+
+.button-medium {
+    font-size: $text-button-medium;
+    line-height: 1.44444;
+}
+
+.button-small {
+    font-size: $text-button-small;
+    line-height: 1.625;
+    text-transform: uppercase !important;
+    text-box-trim: both;
+    text-box-edge: cap;
+}

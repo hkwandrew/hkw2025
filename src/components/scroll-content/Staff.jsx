@@ -25,7 +25,7 @@ const Staff = ({ ...props }) => {
                     className="image"
                     onHoverStart={() => setIsHovered(true)}
                     onHoverEnd={() => setIsHovered(false)}
-                    style={{ backgroundImage: `url(/staff/${props.image})`, }}
+                    style={{ backgroundImage: `url(/hkw2025/public/staff/${props.image})`, }}
                 >
                     <AnimatePresence>
                         {showOverlay && (

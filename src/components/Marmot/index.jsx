@@ -97,6 +97,7 @@ const Marmot = ({ handleClick, isInView, cursorRef, setCursorActive }) => {
                 {!isInView && aboutPage && (
                     <Sign
                         ref={signRef}
+                        
                         handleClick={handleClick}
                     />
                 )}

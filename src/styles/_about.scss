@@ -6,12 +6,18 @@
     gap: 4px;
     width: 100%;
     max-width: 528px;
-    margin: 0 0 136px 70px;
+    margin: 0 0 54px 70px;
     position: absolute;
     bottom: 0;
 
     .about-title {
         text-transform: uppercase;
+    }
+
+    .logo {
+        width: 70px;
+        height: 35px;
+        margin-top: 56px;
     }
 }
 

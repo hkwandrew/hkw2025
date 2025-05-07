@@ -132,3 +132,8 @@ a {
     text-box-trim: both;
     text-box-edge: cap;
 }
+
+@mixin leading-trim {
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+}

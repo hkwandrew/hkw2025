@@ -23,7 +23,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 5;
+    z-index: 4;
     max-width: 590px;
 
     article {
@@ -47,18 +47,10 @@
 }
 
 .work-scroll-page {
-    // position: fixed;
     inset: 0;
     background: #00113c;
     overflow: hidden;
     z-index: 1;
-}
-
-.offcanvas {
-
-    will-change: transform;
-    outline: 2px solid red;
-    /* temp for visual trace */
 }
 
 .scrolling-logos {
@@ -85,110 +77,120 @@
     height: auto;
 }
 
-.offcanvas {
-    // // position: fixed;
-    top: 65.3px;
-    right: 10.4px;
-    // width: 775.57px;
-    height: 120vh;
-    // transform: rotate(-4deg) !important;
-    background: #e3f2fd;
-    // z-index: 999;
-    // overflow-y: auto;
-    padding: 2rem;
-    // // transform: translate(100%, -200px);
-    // display: flex;
-    transition: transform 450ms ease-in;
-    // // box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-    // // clip-path: polygon(0 10%, 100% 0, 100% 100%, 7% 100%);
+
+.skewed-sidebar {
     position: absolute;
-    // top: 0;
+    top: 0;
     right: 0;
-    z-index: 1000;
+    width: 58.82vw;
+    height: 100vh;
+    background-color: colors.$hkw-blue-200;
+    color: white;
     overflow-y: auto;
-    will-change: transform;
-    transform-origin: top center;
+    z-index: 9999;
+    will-change: clip-path;
+
+    .close-btn {
+        position: relative;
+        z-index: 9999;
+        right: 0;
+        font-size: 1rem;
+        border: 1px solid colors.$hkw-blue-400;
+        cursor: pointer;
+        float: right;
+        padding: 12px 16px;
+        background: colors.$hkw-blue-300;
+        border-radius: 9999px;
+        @include typography.leading-trim;
+        translate: 0 -32px;
+    }
 }
 
 .sidebar-content {
-    transform: rotate(4deg);
-}
+    min-height: 200vh;
 
-.close-btn {
-    transform: rotate(4deg);
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 1.2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-
-.tag {
-    background: #007bff;
-    color: #fff;
-    padding: 4px 8px;
-    margin-right: 6px;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    display: inline-block;
-}
-
-.sidebar-content {
-    padding: 89px 99px 0;
 
     h2 {
         font-size: typography.$text-h5;
         font-weight: 700;
         line-height: 1.08333;
         text-transform: uppercase;
-        color: colors.$hkw-blue-100;
+        color: colors.$hkw-neutral-white;
         padding-block-end: 1.5rem;
+        letter-spacing: unset;
     }
 
-    h3 {
-        text-box-trim: both;
-        text-box-edge: cap;
-        font-weight: 500;
+    .description {
+        font-weight: 400;
     }
 
-    .services-list {
+}
+
+.services-list {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    color: colors.$hkw-blue-400;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.625;
+    text-transform: uppercase;
+    font-stretch: 62%;
+    @include typography.leading-trim;
+
+    ul {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 1rem;
-        padding-block-end: 1.5rem;
+        gap: .5rem;
 
-        .description {
-            font-weight: 400;
-        }
+        li {
+            padding: 8px;
+            color: colors.$hkw-neutral-white !important;
+            background-color: colors.$hkw-blue-300;
+            padding: .5rem;
+            border-radius: 4px;
+            border: 1px solid transparent;
+            background: rgba(184, 230, 255, 0.10);
+            font-stretch: 62%;
 
-        ul {
-            display: flex;
-            gap: 4px;
+            cursor: pointer;
+            @include typography.leading-trim;
 
-            li {
-                padding: 8px;
-                color: colors.$hkw-neutral-white !important;
-                background-color: colors.$hkw-blue-300;
 
+            &.active,
+            &:hover {
+                background: unset;
+                border: 1px solid rgba(184, 230, 255, 0.10);
+                transition: background 0.3s ease;
             }
         }
     }
+}
 
-    p {
-        font-size: 18px;
-        line-height: 1.4;
-        letter-spacing: -0.36px;
-        color: colors.$hkw-blue-100;
-    }
+.sidebar-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #0460A1;
+    margin: 48px 0;
+}
 
-    img {
-        width: 100%;
-        margin: 1rem 0;
+.sidebar-sections {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
 
+.horizontal-logo,
+.lumierework-screen {
+    margin-inline-end: 20px;
+}
 
-    }
+.lumierework-logo {
+    margin-inline-start: 20px;
+}
+
+.lumierework-pin-button-mockup {
+    object-fit: cover;
 }
